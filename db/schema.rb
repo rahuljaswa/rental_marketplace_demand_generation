@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170107044050) do
+ActiveRecord::Schema.define(version: 20170110192356) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -27,10 +27,15 @@ ActiveRecord::Schema.define(version: 20170107044050) do
   end
 
   create_table "tags", force: :cascade do |t|
-    t.string   "name",       null: false
-    t.string   "image_url",  null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "name",                            null: false
+    t.string   "image_url",                       null: false
+    t.datetime "created_at",                      null: false
+    t.datetime "updated_at",                      null: false
+    t.float    "adwords_max_average_cpc"
+    t.float    "adwords_max_average_position"
+    t.float    "adwords_max_impressions_per_day"
+    t.float    "adwords_max_click_through_rate"
+    t.float    "adwords_max_clicks_per_day"
   end
 
   create_table "tags_products", id: false, force: :cascade do |t|

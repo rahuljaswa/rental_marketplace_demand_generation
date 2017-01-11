@@ -12,6 +12,12 @@ class Tag < ApplicationRecord
 		return tag
 	end
 
+	# def delete_duplicates
+	# 	duplicate_tags = Tag.select([:name]).group(:name).having("count(name) > 1")
+	# 	duplicate_tags.each do |duplicate_tag|
+	# 	end
+	# end
+
 	def set_initial_tag_image
 		if !self.image_url
 			self.image_url = self.products.first.image_urls[0]

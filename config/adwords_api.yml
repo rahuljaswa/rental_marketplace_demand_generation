@@ -1,0 +1,20 @@
+---
+:authentication:
+  :method: OAuth2
+  :oauth2_client_id: 942932088899-t2d7rvicqdrijvgfcuot2moefcu4vccm.apps.googleusercontent.com
+  :oauth2_client_secret: 5ABJqAbRnVBqfCOUT_rw5Mao
+  :developer_token: iM-6tXlSI44okWkHUk3xAA
+  :client_customer_id: 958-339-9480
+  :user_agent: rental-marketplace-server
+  :oauth2_token:
+    :access_token: ya29.Ci_EA4rNRd-XX0VwDWQ6yQEJ_eXKpW_XMmp_lGtvWE7oAQflUwKOnbLaestHqJps5Q
+    :refresh_token: 1/8pfsd6OrnHeXXgM6qHT2KjOzfZ6qSqDMXBECnsKa9klaZr0fGv8bvRYcpDPtUEQd
+    :issued_at: 2016-12-29 17:58:28.781417000 -08:00
+    :expires_in: 3600
+    :id_token: 
+:service:
+  :environment: PRODUCTION
+:connection:
+  :enable_gzip: false
+:library:
+  :log_level: INFO

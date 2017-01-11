@@ -1,0 +1,23 @@
+<% report.each do |table| %>
+	<table>
+		<thead>
+			<tr>
+				<th></th>
+				<% table["column_headers"].each do |column| %>
+					<th><%= column %></th>
+				<% end %>
+			</tr>
+		</thead>
+		<tbody>
+			<% table["data"].each do |row_data| %>
+				<tr>
+					<td><%= row_data["row_title"] %></td>
+					<% row_data["data"].each do |cell_data| %>
+						<td><%= cell_data %></td>
+					<% end %>
+				</tr>
+			<% end %>
+		</tbody>
+	</table>
+	<br /><br /><br />
+<% end %>
